@@ -1,0 +1,53 @@
+.cards {
+  margin-top: 2rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 3rem;
+}
+
+.card {
+  padding: 1rem;
+  background: $color-white;
+  box-shadow: 4px 4px 10px rgba($color: $color-black, $alpha: 0.1);
+  border-radius: 2px;
+  display: grid;
+  grid-template-columns: 70% auto;
+  align-items: center;
+
+  &__info {
+    span {
+      display: block;
+      text-transform: uppercase;
+      color: $color-grey;
+      font-size: 0.9rem;
+    }
+
+    small {
+      font-weight: 600;
+      color: $color-grey;
+    }
+
+    h2 {
+      font-size: 2.2rem;
+      color: $color-dark-grey;
+    }
+  }
+
+  &__chart {
+    span {
+      font-size: 5rem;
+    }
+
+    &.success {
+      color: $color-success;
+    }
+
+    &.warning {
+      color: $color-warning;
+    }
+
+    &.danger {
+      color: $color-danger;
+    }
+  }
+}

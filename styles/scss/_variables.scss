@@ -3,10 +3,18 @@ $header-height: 70px;
 
 /* Colors */
 $color-white: #fff;
+$color-black: #000;
 $color-purple: #8da2fb;
 $color-dark-purple: #5850ec;
-$color-light-grey: #f1f5f9;
-$color-dark-grey: #efefef;
+$color-light-grey1: #f1f5f9;
+$color-light-grey2: #efefef;
+$color-grey: #555;
+$color-dark-grey: #333;
+
+/* Status */
+$color-success: seagreen;
+$color-warning: orange;
+$color-danger: tomato;
 
 /* Avatar */
 $avatar-img: url('https://avatars.dicebear.com/api/male/1406.svg?b=%237af089&mood[]=happy');
