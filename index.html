@@ -6,14 +6,30 @@
     <!-- Page meta -->
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximun-scale=1.0" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximun-scale=1.0"
+    />
     <!-- Page favicon-->
-    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
     <!-- Page title -->
     <title>Responsive admin Dashboard</title>
     <!-- Page Styles -->
-    <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
-    <link rel="stylesheet" type="text/css" media="screen" href="styles/index.css" />
+    <link
+      rel="stylesheet"
+      href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="screen"
+      href="styles/index.css"
+    />
     <!-- Page Scripts -->
     <script src="js/index.js"></script>
   </head>
@@ -45,16 +61,30 @@
         <div class="menu">
           <div class="menu__head"><span>Dashboard</span></div>
           <ul>
-            <li><a href=""><span class="las la-balance-scale"></span>Finance</a></li>
-            <li><a href=""><span class="las la-chart-pie"></span>Analytics</a></li>
+            <li>
+              <a href=""><span class="las la-balance-scale"></span>Finance</a>
+            </li>
+            <li>
+              <a href=""><span class="las la-chart-pie"></span>Analytics</a>
+            </li>
           </ul>
           <div class="menu__head"><span>Applications</span></div>
           <ul>
-            <li><a href=""><span class="las la-calendar"></span>Calendar</a></li>
-            <li><a href=""><span class="las la-users"></span>Contacts</a></li>
-            <li><a href=""><span class="las la-shopping-cart"></span>Ecommerce</a></li>
-            <li><a href=""><span class="las la-envelope"></span>Mailbox</a></li>
-            <li><a href=""><span class="las la-check-circle"></span>Tasks</a></li>
+            <li>
+              <a href=""><span class="las la-calendar"></span>Calendar</a>
+            </li>
+            <li>
+              <a href=""><span class="las la-users"></span>Contacts</a>
+            </li>
+            <li>
+              <a href=""><span class="las la-shopping-cart"></span>Ecommerce</a>
+            </li>
+            <li>
+              <a href=""><span class="las la-envelope"></span>Mailbox</a>
+            </li>
+            <li>
+              <a href=""><span class="las la-check-circle"></span>Tasks</a>
+            </li>
           </ul>
         </div>
       </div>
@@ -80,7 +110,9 @@
         <div class="page-header">
           <div class="header-title">
             <h1>Analytics Dashboard</h1>
-            <small>Monitor key metrics. Check reporting and review insights</small>
+            <small
+              >Monitor key metrics. Check reporting and review insights</small
+            >
           </div>
           <div class="header-actions">
             <button>
@@ -97,39 +129,131 @@
         <div class="cards">
           <!-- Purchases card -->
           <div class="card">
-              <div class="card__info">
-                <span>Purchases</span>
-                <small>Number of purchases</small>
-                <h2>17,663</h2>
-                <small>2% less purchases</small>
-              </div>
-              <div class="card__chart danger">
-                <span class="las la-chart-line"></span>
-              </div>
+            <div class="card__info">
+              <span>Purchases</span>
+              <small>Number of purchases</small>
+              <h2>17,663</h2>
+              <small>2% less purchases</small>
+            </div>
+            <div class="card__chart danger">
+              <span class="las la-chart-line"></span>
+            </div>
           </div>
           <!-- Refunds card -->
           <div class="card">
-              <div class="card__info">
-                <span>Refunds</span>
-                <small>Number of refunds</small>
-                <h2>$4,523.11</h2>
-                <small>10% less refund</small>
-              </div>
-              <div class="card__chart success">
-                <span class="las la-chart-line"></span>
-              </div>
+            <div class="card__info">
+              <span>Refunds</span>
+              <small>Number of refunds</small>
+              <h2>$4,523.11</h2>
+              <small>10% less refund</small>
+            </div>
+            <div class="card__chart success">
+              <span class="las la-chart-line"></span>
+            </div>
           </div>
           <!-- Visitors card -->
           <div class="card">
-              <div class="card__info">
-                <span>Visitors</span>
-                <small>Number of visitors</small>
-                <h2>46,085</h2>
-                <small>2% less visitors</small>
+            <div class="card__info">
+              <span>Visitors</span>
+              <small>Number of visitors</small>
+              <h2>46,085</h2>
+              <small>2% less visitors</small>
+            </div>
+            <div class="card__chart warning">
+              <span class="las la-chart-line"></span>
+            </div>
+          </div>
+        </div>
+        <!-- Jobs -->
+        <div class="jobs">
+          <!-- Analytics -->
+          <div class="analytics">
+            <!-- Header -->
+            <div class="analytics__header">
+              <h2>Actions needed</h2>
+              <span class="las la-ellipsis-h"></span>
+            </div>
+            <!-- Chart -->
+            <div class="analytics__chart">
+              <div class="chart-circle">
+                <h1>74%</h1>
               </div>
-              <div class="card__chart warning">
-                <span class="las la-chart-line"></span>
+              <div class="analytics-note">
+                <small
+                  >Note: Current sprint requires stakeholders metting to reach
+                  conclusions</small
+                >
               </div>
+            </div>
+            <!-- Report -->
+            <div class="analytics__btn">
+              <button>
+                <span class="las la-file-alt"></span>
+                Generate Report
+              </button>
+            </div>
+          </div>
+          <!-- Grid -->
+          <div class="grid">
+            <h2>
+              Jobs
+              <small>
+                See all jobs
+                <span class="las la-arrow-right"></span>
+              </small>
+            </h2>
+            <table>
+              <tbody>
+                <tr>
+                  <td><span class="indicator"></span></td>
+                  <td>Customer experience designer</td>
+                  <td>Design</td>
+                  <td>Copenhagen Dk.</td>
+                  <td>Posted 6 days ago</td>
+                  <td><button>8 applicants</button></td>
+                </tr>
+                <tr>
+                  <td><span class="indicator"></span></td>
+                  <td>Software developer</td>
+                  <td>Development</td>
+                  <td>Copenhagen Dk.</td>
+                  <td>Posted 6 days ago</td>
+                  <td><button>3 applicants</button></td>
+                </tr>
+                <tr>
+                  <td><span class="indicator"></span></td>
+                  <td>Customer experience designer</td>
+                  <td>Design</td>
+                  <td>Copenhagen Dk.</td>
+                  <td>Posted 6 days ago</td>
+                  <td><button>8 applicants</button></td>
+                </tr>
+                <tr>
+                  <td><span class="indicator"></span></td>
+                  <td>Software developer</td>
+                  <td>Development</td>
+                  <td>Copenhagen Dk.</td>
+                  <td>Posted 6 days ago</td>
+                  <td><button>3 applicants</button></td>
+                </tr>
+                <tr>
+                  <td><span class="indicator"></span></td>
+                  <td>Customer experience designer</td>
+                  <td>Design</td>
+                  <td>Copenhagen Dk.</td>
+                  <td>Posted 6 days ago</td>
+                  <td><button>8 applicants</button></td>
+                </tr>
+                <tr>
+                  <td><span class="indicator"></span></td>
+                  <td>Software developer</td>
+                  <td>Development</td>
+                  <td>Copenhagen Dk.</td>
+                  <td>Posted 6 days ago</td>
+                  <td><button>3 applicants</button></td>
+                </tr>
+              </tbody>
+            </table>
           </div>
         </div>
       </main>

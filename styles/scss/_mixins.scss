@@ -1,0 +1,24 @@
+/* Mixins */
+@mixin button {
+  padding: 0.6rem 1rem;
+  margin-left: 1rem;
+  display: inline-flex;
+  align-items: center;
+  outline: none;
+  color: $color-white;
+  background: $color-dark-purple;
+  border: 2px solid $color-light-grey1;
+  border-radius: 5px;
+  font-weight: 600;
+}
+
+@mixin shadow {
+  box-shadow: 4px 4px 10px rgba($color: $color-black, $alpha: 0.1);
+}
+
+@mixin card {
+  @include shadow;
+  padding: 1rem;
+  border-radius: 2px;
+  background: $color-white;
+}
