@@ -34,8 +34,8 @@
 
   main {
     padding: 1.5rem;
-    background: $color-light-grey1;
     min-height: calc(100vh - #{$header-height});
+    background: $color-light-grey1;
 
     .page-header {
       display: flex;
