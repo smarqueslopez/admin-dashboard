@@ -2,6 +2,7 @@ $sidebar-width: 280px;
 $bg-color-sidebar: #1a202e;
 
 .sidebar {
+  @include shadow;
   height: 100%;
   width: $sidebar-width;
   padding: 0rem 1.5rem;
@@ -10,6 +11,8 @@ $bg-color-sidebar: #1a202e;
   top: 0;
   color: $color-white;
   background-color: $bg-color-sidebar;
+  z-index: 10;
+  transition: left 300ms;
 
   &__header {
     height: $header-height;
@@ -98,4 +101,22 @@ $bg-color-sidebar: #1a202e;
       }
     }
   }
+}
+
+#sidebar-toggle {
+  display: none;
+}
+
+#sidebar-toggle:checked ~ .sidebar {
+  left: -100%;
+}
+
+#sidebar-toggle:checked ~ .main-content {
+  margin-left: 0;
+}
+
+#sidebar-toggle:checked ~ .main-content header {
+  width: 100%;
+  margin-left: 0;
+  left: 0;
 }

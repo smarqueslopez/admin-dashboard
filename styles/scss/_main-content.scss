@@ -1,5 +1,6 @@
 .main-content {
   margin-left: $sidebar-width;
+  transition: margin-left 300ms;
 
   header {
     @include shadow;
@@ -14,6 +15,7 @@
     left: $sidebar-width;
     z-index: 10;
     background: $color-white;
+    transition: left 300ms;
 
     .menu-toggle {
       label {
@@ -44,6 +46,7 @@
     min-height: calc(100vh - #{$header-height});
     background: $color-light-grey1;
     margin-top: $header-height;
+    transition: left 300ms;
 
     .page-header {
       display: flex;
