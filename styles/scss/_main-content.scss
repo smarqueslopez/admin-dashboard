@@ -2,11 +2,18 @@
   margin-left: $sidebar-width;
 
   header {
+    @include shadow;
     height: $header-height;
+    width: calc(100vw - #{$sidebar-width});
     padding: 1rem 1.5rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: fixed;
+    top: 0;
+    left: $sidebar-width;
+    z-index: 10;
+    background: $color-white;
 
     .menu-toggle {
       label {
@@ -36,6 +43,7 @@
     padding: 1.5rem;
     min-height: calc(100vh - #{$header-height});
     background: $color-light-grey1;
+    margin-top: $header-height;
 
     .page-header {
       display: flex;
