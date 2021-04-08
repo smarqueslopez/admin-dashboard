@@ -101,6 +101,18 @@ $bg-color-sidebar: #1a202e;
       }
     }
   }
+
+  /* Responsive design */
+
+  @include mobile {
+    left: -100%;
+    z-index: 30;
+  }
+
+  @include tablet {
+    left: -100%;
+    z-index: 30;
+  }
 }
 
 #sidebar-toggle {
@@ -111,12 +123,36 @@ $bg-color-sidebar: #1a202e;
   left: -100%;
 }
 
-#sidebar-toggle:checked ~ .main-content {
-  margin-left: 0;
+/* Responsive design */
+
+@include mobile {
+  #sidebar-toggle:checked ~ .sidebar {
+    left: 0;
+  }
+
+  #sidebar-toggle:checked ~ .main-content {
+    margin-left: 0;
+  }
+
+  #sidebar-toggle:checked ~ .main-content header {
+    width: 100%;
+    margin-left: 0;
+    left: 0;
+  }
 }
 
-#sidebar-toggle:checked ~ .main-content header {
-  width: 100%;
-  margin-left: 0;
-  left: 0;
+@include tablet {
+  #sidebar-toggle:checked ~ .sidebar {
+    left: 0;
+  }
+
+  #sidebar-toggle:checked ~ .main-content {
+    margin-left: 0;
+  }
+
+  #sidebar-toggle:checked ~ .main-content header {
+    width: 100%;
+    margin-left: 0;
+    left: 0;
+  }
 }

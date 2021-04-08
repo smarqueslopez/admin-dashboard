@@ -35,7 +35,7 @@
     }
 
     &__chart {
-      .chart-circle {
+      .circle {
         height: 150px;
         width: 150px;
         margin: 0 auto;
@@ -45,6 +45,16 @@
         border: 10px solid $color-dark-purple;
         border-left: 10px solid transparent;
         border-radius: 50%;
+      }
+
+      .note {
+        display: flex;
+        justify-content: center;
+        justify-items: center;
+
+        small {
+          text-align: center;
+        }
       }
     }
 
@@ -66,24 +76,34 @@
     }
   }
 
-  .grid {
+  .table-responsive {
+    @include scrollbar;
+    overflow: auto;
 
     table {
       width: 100%;
       margin-top: 1rem;
       border-collapse: collapse;
+      overflow-x: auto;
 
       td {
         div {
           height: 50px;
+          width: 100%;
           padding: 0.5rem;
-          margin-bottom: .8rem;
+          margin-bottom: 0.8rem;
           display: flex;
           align-items: center;
+          justify-content: left;
           font-size: 0.95rem;
           font-weight: 500;
           color: $color-grey;
           background: $color-white;
+          white-space: nowrap;
+
+          &.center {
+          justify-content: center;
+          }
         }
       }
 
@@ -102,5 +122,19 @@
         }
       }
     }
+  }
+
+  /* Responsive design */
+
+  @include tablet {
+    margin-top: 3rem;
+    grid-template-columns: auto 50%;
+    grid-gap: 1.5rem;
+  }
+
+  @include mobile {
+    margin-top: 3rem;
+    grid-template-columns: 100%;
+    grid-gap: 1.5rem;
   }
 }

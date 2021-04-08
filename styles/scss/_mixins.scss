@@ -1,4 +1,7 @@
 /* Mixins */
+
+/** Components */
+
 @mixin button {
   padding: 0.6rem 1rem;
   margin-left: 1rem;
@@ -12,13 +15,77 @@
   font-weight: 600;
 }
 
-@mixin shadow {
-  box-shadow: 4px 4px 10px rgba($color: $color-black, $alpha: 0.1);
-}
-
 @mixin card {
   @include shadow;
   padding: 1rem;
   border-radius: 2px;
   background: $color-white;
+}
+
+/* Styles */
+
+@mixin shadow {
+  box-shadow: 4px 4px 10px rgba($color: $color-black, $alpha: 0.1);
+}
+
+@mixin no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+@mixin scrollbar {
+  -ms-overflow-style: 3px;
+  scrollbar-width: 3px;
+
+  &::-webkit-scrollbar {
+    width: 3px;
+
+    &-thumb {
+      background: #ccc;
+      border-radius: 4px;
+
+      &:active {
+        background-color: #999999;
+      }
+
+      &:hover {
+        background: #b3b3b3;
+        box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.2);
+      }
+    }
+
+    &-track {
+      background: #e1e1e1;
+      border-radius: 4px;
+
+      &:hover,
+      &:active {
+        background: #d4d4d4;
+      }
+    }
+  }
+}
+
+/* Viewports */
+
+@mixin mobile {
+  @media only screen and (max-width: 700px) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media only screen and (min-width: 700px) and (max-width: 1200px) {
+    @content;
+  }
+}
+
+/* Desktop */
+@mixin desktop {
+  @media only screen and (min-width: 1200px) {
+    @content;
+  }
 }

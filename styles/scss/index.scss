@@ -13,5 +13,6 @@
 }
 
 body {
+  @include no-scrollbar;
   font-family: $font-family-body;
 }
